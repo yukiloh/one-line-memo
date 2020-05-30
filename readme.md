@@ -52,6 +52,8 @@ sleep(1)也可以实现相同效果,但实际sleep(1)容易消耗更多时间(�
 ※sleep和yield都不会释放当前锁
 ※奇怪的知识(未测试),执行一个while(true)任务时,yield和sleep(0)都会使得cpu占用100%,但sleep(1)不会
 
+~~~~
+
 #### volatile ['vɑlət(ə)l]  和 synchronized
 首先需要了解cpu和1,2,3级缓存,cpu每次会优先去缓存中读值,而不是主存(内存)  
 volatile会标记变量,让cpu(遵循MESI协议)每次都去主存获取值(保证每次都是最新的值),但他不保证变量的原子性  
