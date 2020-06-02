@@ -261,3 +261,12 @@ Thread-2获得了锁,count: 5
 
 - 共享锁  
   可以被多个线程持有,只可以读取数据  
+
+---
+
+## 其他
+
+### idea
+
+#### Connection reset
+主要是墙的问题.通过修改host可以解决.注意域名不是`github.com`而是`api.github.com`
