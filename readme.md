@@ -268,5 +268,10 @@ Thread-2获得了锁,count: 5
 
 ### idea
 
-#### Connection reset
+#### 无法连接GitHub,Connection reset
 主要是墙的问题.通过修改host可以解决.注意域名不是`github.com`而是`api.github.com`
+
+#### 为文件添加头部
+Settings → Editor → File and Code Templates → File Header中进行设置  
+或者添加Live Templates
+参考: https://blog.csdn.net/qq_39098813/article/details/80731698
