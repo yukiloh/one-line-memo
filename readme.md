@@ -26,7 +26,7 @@
 
 #### join,sleep(0),yield的区别
 
-- `join`  : 该线程完成后才会执行后续的线程  
+- `join`  : 父线程会等待执行join的子线程(父线程挂起),当子线程执行完后才会唤醒父线程,继续执行之后的代码  
 
 ```java
 //假设有3条线程
@@ -119,6 +119,16 @@ volatile的适用场景:
 synchronized是悲观锁,而Lock是乐观锁(通过CAS实现compare-and-swap)  
 在lock出现后,synchronized的性能低于其,但1.6,1.7后被优化,性能与Lock无差  
 因此1.6之后的**首先推荐**使用synchronized
+
+#### CAS
+
+Compare and Swap ,比较后交换  
+一种无锁算法,比较预期值和新值,当二者相同时将现有的内存值与新值交换  
+拿sql举例:
+> 执行sql,预计版本号会从 0 到 1
+> 插入数据后,比较现有版本号
+> 如果是1,则提交事务
+> 如果不是1,说明执行sql期间其他线程也执行了sql,进行回滚
 
 ---
 
@@ -217,7 +227,7 @@ java可以通过ReentrantLock来实现公平锁(synchronized只可以是非公�
 
 - 公平锁时: 每个线程都会轮流执行count++,而且他们**每次**的顺序都是一样的  
 
-```shell
+```vb
 Thread-0获得了锁,count: 1
 Thread-4获得了锁,count: 2
 Thread-2获得了锁,count: 3
@@ -234,7 +244,7 @@ Thread-0获得了锁,count: 11
 
 - 非公平锁时: 可能会被单独某一条线程霸占
 
-```shell
+```vb
 Thread-2获得了锁,count: 1
 Thread-2获得了锁,count: 2
 Thread-2获得了锁,count: 3
@@ -261,6 +271,26 @@ Thread-2获得了锁,count: 5
 
 - 共享锁  
   可以被多个线程持有,只可以读取数据  
+
+---
+
+#### AQS (简单了解)
+
+全称`AbstractQueuedSynchronizer`,jdk提供的**构建锁和同步器**的框架  
+ReentrantLock就是通过它来创建的
+
+##### AQS核心思想
+
+如果请求的共享资源空闲,则将当前请求资源的线程设置为有效的工作线程,并且将共享资源设置为锁定状态  
+如果请求的共享资源被占用,则需要创建一套线程阻塞等待,以及被唤醒时锁分配的机制  
+AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
+
+##### 关于CLH(Craig,Landin,and Hagersten)
+
+一个隐式的虚拟队列(可以FIFO),内部存储3个变量: 1.前节点,2.当前节点,3.lock的状态(true/false)  
+创建时,每个新节点(线程)通过cas尝试去充当tail(获取前节点,并设置自己节点)  
+取出时(解锁),设置节点中的lock为false.后节点会观测前节点,如果是false,则表示自己可以进行解锁  
+参考: https://www.jianshu.com/p/5ad8539e25c3
 
 ---
 
