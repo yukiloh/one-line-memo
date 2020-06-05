@@ -290,7 +290,7 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 一个隐式的虚拟队列(可以FIFO),内部存储3个变量: 1.前节点,2.当前节点,3.lock的状态(true/false)  
 创建时,每个新节点(线程)通过cas尝试去充当tail(获取前节点,并设置自己节点)  
 取出时(解锁),设置节点中的lock为false.后节点会观测前节点,如果是false,则表示自己可以进行解锁  
-参考: https://www.jianshu.com/p/5ad8539e25c3
+参考: <https://www.jianshu.com/p/5ad8539e25c3>
 
 ---
 
@@ -300,14 +300,26 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 
 ---
 
+### 其他补充
+
+#### ==比较的是内存地址,object的equals其实也是.但String的equals进行了"重写"
+
+#### n * 31
+
+重写hashcode可以看到他会 `result 31`,因为jvm可以把n*31优化为位运算`(n<<5)-n`  
+
+---
+
 ## 其他
 
 ### idea
 
 #### 无法连接GitHub,Connection reset
+
 主要是墙的问题.通过修改host可以解决.注意域名不是`github.com`而是`api.github.com`
 
 #### 为文件添加头部
+
 Settings → Editor → File and Code Templates → File Header中进行设置  
 或者添加Live Templates
-参考: https://blog.csdn.net/qq_39098813/article/details/80731698
+参考: <https://blog.csdn.net/qq_39098813/article/details/80731698>
