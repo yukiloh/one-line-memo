@@ -312,6 +312,16 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 
 ## 其他
 
+### win10下的ubuntu子系统(wls2.0)
+
+#### 修改默认登陆用户为root
+
+通过`ubuntu config --default-user root`可以修改wsl默认登陆的用户名(此处为root)  
+如果出现`ubuntu : 无法将“ubuntu”项识别为 cmdlet、函数、脚本文件或可运行程序的名称...`则可以:  
+1. 查看ubuntu的安装位置,默认情况下应该在`C:\Users\YOUR_USERNAME\AppData\Local\Microsoft\WindowsApps`  
+  比如我的就是`ubuntu2004.exe`  
+2. 执行命令`ubuntu2004.exe config --default-user root`
+
 ### idea
 
 #### 无法连接GitHub,Connection reset
