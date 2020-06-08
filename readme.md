@@ -312,6 +312,12 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 
 ## 其他
 
+### 缓存
+
+#### memcached与redis的区别
+
+memcached:只支持k-v,多线程,只存于内存,更好的单机性能,无法分布式(但可以通过如计算hash来让客户端从多个mem机种取值)
+
 ### win10下的ubuntu子系统(wls2.0)
 
 #### 修改默认登陆用户为root
@@ -326,7 +332,7 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 
 #### 无法连接GitHub,Connection reset
 
-主要是墙的问题.通过修改host可以解决.注意域名不是`github.com`而是`api.github.com`
+主要是墙的问题.通过修改host可以解决.注意对于idea,域名不是`github.com`而是`api.github.com`
 
 #### 为文件添加头部
 
