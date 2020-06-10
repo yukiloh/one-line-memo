@@ -318,6 +318,8 @@ AQS通过CLH列锁实现,即将暂时获取不到锁的线程加入到队列中
 
 memcached:只支持k-v,多线程,只存于内存,更好的单机性能,无法分布式(但可以通过如计算hash来让客户端从多个mem机种取值)
 
+---
+
 ### win10下的ubuntu子系统(wls2.0)
 
 #### 修改默认登陆用户为root
@@ -327,6 +329,8 @@ memcached:只支持k-v,多线程,只存于内存,更好的单机性能,无法分
 1. 查看ubuntu的安装位置,默认情况下应该在`C:\Users\YOUR_USERNAME\AppData\Local\Microsoft\WindowsApps`  
   比如我的就是`ubuntu2004.exe`  
 2. 执行命令`ubuntu2004.exe config --default-user root`
+
+---
 
 ### idea
 
@@ -339,3 +343,12 @@ memcached:只支持k-v,多线程,只存于内存,更好的单机性能,无法分
 Settings → Editor → File and Code Templates → File Header中进行设置  
 或者添加Live Templates
 参考: <https://blog.csdn.net/qq_39098813/article/details/80731698>
+
+---
+
+### markdown
+
+#### 生成目录树
+
+可以通过`mddir`来生成目录树  
+地址以及安装方法: https://www.npmjs.com/package/mddir
