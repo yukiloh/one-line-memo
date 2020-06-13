@@ -27,7 +27,7 @@ Java开发工程师
 ## 个人简介
 
 对于技术,本人属于需求驱动型,发现问题后习惯于去了解背后原理  
-了解过Java的底层[(查看)](https://github.com/yukiloh/one-line-memo) , SpringBoot启动源码[(查看)](https://www.jianshu.com/p/638508cab977) , B-Tree[(查看)](https://www.jianshu.com/p/4dcfd7085a85) , 23种设计模式[(查看)](https://www.jianshu.com/p/3f9e289cf51c)
+记录过java的一些基础[(查看)](https://gitee.com/ashin10/one-line-memo) , 看过SpringBoot启动原码[(查看)](https://www.jianshu.com/p/638508cab977) , B-Tree[(查看)](https://www.jianshu.com/p/4dcfd7085a85) , 了解i过23种设计模式[(查看)](https://www.jianshu.com/p/3f9e289cf51c) 
 勤于提高自身业务能力,通过LeetCode , SQLZOO[(查看)](https://www.jianshu.com/p/087489568f2a)等题库来完善自身知识储备  
 富有Geek精神~~爱折腾~~,善于运用实践所学,例如:  
 maria安全一瞥[(查看)](https://www.jianshu.com/p/558332f97a7d) ,  和idea说再见时[(查看)](https://www.bilibili.com/video/BV1Dz411B7J7) 等  
