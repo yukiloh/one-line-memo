@@ -37,6 +37,7 @@ maria安全一瞥[(查看)](https://www.jianshu.com/p/558332f97a7d) ,  和idea�
 ### 电商后台CRM
 
 - 展示地址:  [https://murasakichigo.xyz/tomorrow/#/my-shop/login](https://murasakichigo.xyz/tomorrow/#/my-shop/login)  (境外服务器,访问可能受限)  
+  备选地址: http://34.85.51.72:8848/
 
 - 项目概述:  前后端分离的电商后台管理平台.允许进行用户,权限,商品,订单的各种操作
   ![项目结构图](https://raw.githubusercontent.com/yukiloh/my-image-repo/master/%E6%97%A0%E6%A0%87%E9%A2%98.jpg)
