@@ -1,13 +1,13 @@
 # 个人简历
 
-## 唐道远
+## 我
 
 男
 25岁
 浙江杭州
 4年经验
-13732295343
-tdy853839625@qq.com
+MTM3MzIyOTUzNDM=
+dGR5ODUzODM5NjI1QHFxLmNvbQ==
 
 ## 求职意向
 
@@ -98,10 +98,4 @@ tdy853839625@qq.com
 得益于多看范式，业界解决问题思路，思维活跃，面对疑难bug往往能给出合适的解决方案。  
 能够快速上手新的技术，拥抱变化，走出舒适区。  
 技术涉猎广泛，玩过electron、chrome、Alfred插件、docker、Nginx、MySQL等，不把自己局限于前端。  
-
-## 社区论坛
-
-github: https://github.com/mydaoyuan
-zhihu: https://www.zhihu.com/people/tang-dao-yuan
-segmentfault: https://segmentfault.com/u/tangdaoyuan
 

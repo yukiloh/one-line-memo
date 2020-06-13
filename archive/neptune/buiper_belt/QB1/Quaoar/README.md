@@ -2,10 +2,10 @@
 
 ## 基础信息
 
-姓名：z###  
+姓名：####  
 户籍/出生地：上海  
-邮箱：eXVraWxvaEBsaXZlLmNu  (base64)    
-手机: MTczMTcxOTEzOTg=  (base64)  
+邮箱：eXVraWxvaEBsaXZlLmNu  
+手机: MTczMTcxOTEzOTg=  
 
 ## 求职意向
 
@@ -77,6 +77,7 @@ maria安全一瞥[(查看)](https://www.jianshu.com/p/558332f97a7d) ,  和idea�
   
   - 为了方便朋友,接入过支付宝登陆
   ![登陆页面](https://raw.githubusercontent.com/yukiloh/my-image-repo/master/QQ%E6%88%AA%E5%9B%BE20200604205516.png)
+  
 ---
 
 ## 在校经历
