@@ -139,6 +139,10 @@ synchronized是悲观锁,而Lock是乐观锁(通过**CAS**实现compare-and-swap
 在lock出现后,synchronized的性能低于其,但1.6,1.7后被优化,性能与Lock无差  
 因此1.6之后的**首先推荐**使用synchronized
 
+如果出现竞争激烈的情况,synchronized是劣于lock的  
+因为synchronized会一直阻塞,而lock提供更多的方法,可以在阻塞时采取更好的策略来应对竞争  
+例如,对于一个读操作,synchronized后其他线程无法读取,但lock可以使其他线程不产生冲突
+
 #### CAS
 
 Compare and Swap ,比较后交换  
