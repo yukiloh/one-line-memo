@@ -2,10 +2,10 @@
 
 ## 基础信息
 
-姓名：####  
+姓名：emhhbmd4aW4=  
 户籍/出生地：上海  
 邮箱：eXVraWxvaEBsaXZlLmNu  
-手机: MTczMTcxOTEzOTg=  
+手机：MTczMTcxOTEzOTg=  
 
 ## 求职意向
 
@@ -83,6 +83,6 @@ maria安全一瞥[(查看)](https://www.jianshu.com/p/558332f97a7d) ,  和idea�
 
 ## 在校经历
 
-- 2009~2011 上海戏剧学院附属高中  
+- 2009~2011 上海托普信息技术学院  
 - 2011~2013 东京美罗斯语言学校  
 - 2013~2017 东京农业大学  
